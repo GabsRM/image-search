@@ -59,10 +59,8 @@ formElement.addEventListener("submit", (event) => {
   event.preventDefault();
   page = 1;
   searchImages();
-  createFooter();
 });
 
 showMore.addEventListener("click", (event) => {
   searchImages();
-  createFooter();
 });
