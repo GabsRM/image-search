@@ -7,9 +7,9 @@ const showMore = document.querySelector("#show-more-button");
 let inputData = "";
 let page = 1;
 
+
 async function searchImages() {
   inputData = document.querySelector("#search-input").value;
-  console.log(inputData);
   const url = `https://api.unsplash.com/search/photos?client_id=${accessKey}&page=${page}&query=${inputData}`;
 
   const response = await fetch(url);
